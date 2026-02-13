@@ -1,6 +1,18 @@
 {
     "name": "static-page-component",
+    "version": "1.0.3",
     "description": "Static Page Component",
+    "main": "bin/index.js",
+    "types": "bin/index.d.ts",
+    "files": [
+        "bin",
+        "PulumiPlugin.yaml",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build"
+    },
     "dependencies": {
         "@pulumi/aws": "^7.6.0",
         "@pulumi/pulumi": "^3.191.0"
